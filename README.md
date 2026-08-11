@@ -52,7 +52,7 @@ src/
 
 This is a front-end only project — there is no backend or database. Todos are stored in the browser's `localStorage`, so data is tied to a single browser and will not sync across devices.
 
-# Live Demo
+# Live Demo:
 
 https://reactdo-by-arshiya.pages.dev/
 
