@@ -1,16 +1,62 @@
-# React + Vite
+# ReactDo
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A simple todo list app built with React and Tailwind CSS. Add, edit, delete, and mark tasks as complete — all data is saved locally in the browser using `localStorage`.
 
-Currently, two official plugins are available:
+# Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Add new todos
+- Edit existing todos in place
+- Delete todos
+- Mark todos as complete/incomplete
+- Toggle visibility of finished todos
+- Data persists across page refreshes via `localStorage`
 
-## React Compiler
+# Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** — UI library
+- **Vite** — build tool and dev server
+- **Tailwind CSS v4** — styling
+- **react-icons** — edit/delete icons
+- **uuid** — unique IDs for todo items
 
-## Expanding the Oxlint configuration
+# Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Clone the repo and install dependencies:
+
+```bash
+git clone https://github.com/not-arshiya/ReactDo.git
+cd ReactDo
+npm install
+```
+
+Run the dev server:
+
+```bash
+npm run dev
+```
+
+Then open the local URL Vite gives you (usually `http://localhost:5173`).
+
+# Project Structure
+
+```
+src/
+├── components/
+│   └── Navbar.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+# Notes
+
+This is a front-end only project — there is no backend or database. Todos are stored in the browser's `localStorage`, so data is tied to a single browser and will not sync across devices.
+
+# Live Demo
+
+https://reactdo-by-arshiya.pages.dev/
+
+
+# Author
+
+Built by [Arshiya](https://github.com/not-arshiya).
